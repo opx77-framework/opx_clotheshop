@@ -17,11 +17,13 @@ permissions {
     "players.life.read", -- server: Open77.players.isDead (a dead player cannot shop)
     "input.actions",     -- client: RegisterKeyMapping / Open77.input.keyFor (the open key)
     "ui.vanilla.map",    -- client: Open77.blips (map pins, Config.blips)
+    "http.request", -- server: Open77.http.get (update check, Config.versionCheck)
 }
 
 shared_script "config.lua"
 
 server_script "server/main.lua"
+server_script "server/version.lua"
 
 client_script "client/main.lua"
 

@@ -47,3 +47,8 @@ Config.points = {
 	{ name = 'kabuki_crossing_barber', type = 'barber', label = 'Barber - The Crossing', price = 80,
 	  x = -1218.65, y = 2022.93, z = 7.82, radius = 2.5, bucket = 0, society = false, jobs = false },
 }
+
+-- Update check at start: compares this version with the one published on GitHub and prints a line in the
+-- server console when an update is out. Needs outbound HTTP in server.jsonc ("http": "enabled": true, with
+-- "raw.githubusercontent.com" in "allowedHosts"). false = no request.
+Config.versionCheck = true
